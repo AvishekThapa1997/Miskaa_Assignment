@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/countryRootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/countryImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#B8BDC1"
+        app:layout_constraintDimensionRatio="20:15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/countryImage"
+        app:layout_constraintTop_toBottomOf="@id/countryImage" />
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="@id/tvName"
+        tools:text="india" />
+
+    <TextView
+        android:id="@+id/tvCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/capital"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <TextView
+        android:id="@+id/tvCapitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@id/tvCapital"
+        app:layout_constraintStart_toEndOf="@id/tvCapital"
+        app:layout_constraintTop_toTopOf="@id/tvCapital"
+        tools:text="Delhi" />
+
+    <TextView
+        android:id="@+id/tvRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/region"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvCapital" />
+
+    <TextView
+        android:id="@+id/tvRegionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@id/tvRegion"
+        app:layout_constraintStart_toEndOf="@id/tvRegion"
+        app:layout_constraintTop_toTopOf="@id/tvRegion"
+        tools:text="Region" />
+
+    <TextView
+        android:id="@+id/tvSubRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/sub_region"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvRegion" />
+
+    <TextView
+        android:id="@+id/tvSubRegionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@id/tvSubRegion"
+        app:layout_constraintStart_toEndOf="@id/tvSubRegion"
+        app:layout_constraintTop_toTopOf="@id/tvSubRegion"
+        tools:text="Sub-Region" />
+
+    <TextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/population"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvSubRegion" />
+
+    <TextView
+        android:id="@+id/tvPopulationDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@id/tvPopulation"
+        app:layout_constraintStart_toEndOf="@id/tvPopulation"
+        app:layout_constraintTop_toTopOf="@id/tvPopulation"
+        tools:text="181686218" />
+
+    <TextView
+        android:id="@+id/tvBorders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/borders"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvPopulation" />
+
+    <TextView
+        android:id="@+id/tvBorderDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:scrollbars="horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvBorders"
+        app:layout_constraintTop_toTopOf="@id/tvBorders"
+        tools:text="Borders" />
+<androidx.constraintlayout.widget.Barrier
+    android:id="@+id/barrier"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:barrierDirection="bottom"
+    app:constraint_referenced_ids="tvBorderDetails"/>
+    <TextView
+        android:id="@+id/tvLanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/languages"
+        android:scrollbars="horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+    <TextView
+        android:id="@+id/tvLanguageDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/dark_blue"
+        android:theme="@style/TextViewStyle"
+        app:layout_constraintBottom_toBottomOf="@id/tvLanguages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLanguages"
+        app:layout_constraintTop_toTopOf="@id/tvLanguages"
+        tools:text="Languages" />
+</androidx.constraintlayout.widget.ConstraintLayout>
